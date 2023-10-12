@@ -16,14 +16,19 @@ El contenido de cada posición será un número del 1 al 36 -->
 
 
         <?php
-        $arrayNumeros = array(
-            "primerArray" => array("01", "02", "03", "04", "05", "06"),
-            "segundoArray" => array("07", "08", "09", "10", "11", "12"),
-            "tercerArray" => array("13", "14", "15", "16", "17", "18"),
-            "cuartoArray" => array("19", "20", "21", "22", "23", "24"),
-            "quintoArray" => array("25", "26", "27", "28", "29", "30"),
-            "sextoArray" => array("31", "32", "33", "34", "35", "36")
-        );
+        $valor = 0;
+        $arrayNumeros = array();
+        for ($fila = 0; $fila < 6; $fila++) {
+            for ($columna = 0; $columna < 6; $columna++) {
+                $valor++;
+                if ($valor < 10) {
+                    $arrayNumeros[$fila][$columna] = "0" . $valor;
+                } else {
+                    $arrayNumeros[$fila][$columna] = $valor;
+                }
+
+            }
+        }
         //Ejercicio realizado usando foreach
         // foreach ($arrayNumeros as $key=>$valor){
         //     foreach($valor as $otroValor)
