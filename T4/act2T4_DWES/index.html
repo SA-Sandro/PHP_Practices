@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2, tema 4</title>
+    <style>
+        .allContainer {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .div1,
+        .div2 {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        form {
+            display: grid;
+            justify-items: center;
+        }
+
+        .boton {
+            padding: 5px;
+            background-color: lightblue;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="allContainer">
+        <form action="validacion.php" method="GET">
+            <div class="div1">
+                <label for="usuario">Usuario a validar: </label>
+                <input type="text" id="usuario" class="user" name="usuario" placeholder="Escribe aquí el usuario...">
+            </div>
+            <div class="div2">
+                <label for="numero">Número a validar: </label>
+                <input type="number" id="numero" class="number" name="numero" placeholder="Escribe aquí el número...">
+            </div>
+            <div>
+                <button type="submit" class="boton">Validar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
