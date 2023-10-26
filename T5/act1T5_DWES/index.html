@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario principal</title>
+    <style>
+        .mainContainer {
+            padding: 50px;
+            display: grid;
+            justify-content: center;
+        }
+
+        form {
+            display: grid;
+            width: 50%;
+            justify-items: center;
+        }
+
+        .formContainer {
+            display: grid;
+            justify-content: center;
+        }
+
+        label {
+            display: grid;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        button {
+            width: 70px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        
+        <div class="formContainer">
+            <form method="post" action="home.php">
+                <label>Usuario:
+                    <input type="text" name="usuario" id="inpusito">
+                </label>
+                <label>Contraseña:
+                    <input type="password" name="contra" id="inpusito">
+                </label>
+                <button type="submit">
+                    Enviar!
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
